@@ -24,11 +24,6 @@ int main(void)
       if (A < linhas)
       {
         A++;
-        while (linhas--)
-        {
-          scanf(" %10000[^\n]", texto[i]);
-          i++;
-        }
       }
     }
     else if (action == 'k')

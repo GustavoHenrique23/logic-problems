@@ -12,9 +12,7 @@ int main()
   int altura;
   char lenhador;
   int alturaL = 0;
-
   scanf("%i", &qtronco);
-
   for (i = 0; i < qtronco + 1; i++)
   {
     for (j = 0; j < 11; j++)
@@ -29,7 +27,6 @@ int main()
       }
     }
   }
-
   scanf("%i", &galhos);
 
   for (i = 0; i < galhos; i++)
@@ -48,7 +45,6 @@ int main()
       arvore[altura][9] = '-';
     }
   }
-
   scanf(" %c", &lenhador);
   if (lenhador == 'E')
   {
@@ -60,7 +56,6 @@ int main()
     arvore[alturaL + 1][8] = 'L';
     arvore[alturaL + 2][8] = 'L';
   }
-
   printf("~~~~~~~~~~~\n");
   for (i = alturaL + 5; i > 0; i--)
   {
@@ -71,9 +66,7 @@ int main()
     printf("\n");
   }
   printf("~~~~~~~~~~~\n");
-
   char action;
-
   while (scanf(" %c", &action) > 0)
   {
     if (action == 'T')
@@ -148,9 +141,7 @@ int main()
           arvore[alturaL + 1][6] = '<';
       }
     }
-
     printf("~~~~~~~~~~~\n");
-
     for (i = alturaL + 5; i > alturaL; i--)
     {
       for (j = 0; j < 11; j++)
