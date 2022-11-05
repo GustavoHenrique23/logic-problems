@@ -3,7 +3,6 @@
 
 int main(void)
 {
-  int i = 0;
   int linhas;
   scanf("%i", &linhas);
   char texto[linhas][1001];
