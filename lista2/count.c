@@ -8,7 +8,7 @@ int faz_conta_direito(int parcelas, char op)
 
   scanf("%i", &sum);
 
-  for (i = 0; i < parcelas - 1; i++)
+  for (i = 1; i < parcelas; i++)
   {
     scanf("%i", &valores);
 
@@ -25,7 +25,7 @@ int faz_conta_direito(int parcelas, char op)
 }
 int main()
 {
-  int resultado = faz_conta_direito(4, '+');
+  int resultado = faz_conta_direito(4, '-');
 
   printf("%i\n", resultado);
 }
